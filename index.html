@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <dialog>
+        <button>X</button>
+        <form id="form">
+            <label for="title">Book's Title</label>
+            <input type="text" id="title" name="title" placeholder="Harry Potter">
+            <label for="author">Book's Author</label>
+            <input type="text" id="author" name="author" placeholder="J.K.Rowling">
+            <label for="pages">How many pages are there?</label>
+            <input type="number" id="pages" name="pages" placeholder="780">
+            <label for="read">Have you read it?</label>
+            <input type="checkbox" id="read" name="read">
+            <label for="notes">Any notes?</label>
+            <input type="text" id="notes" name="notes">
+            <button id="submitBook" type="button" onclick="submitForm()">Add</button>
+        </form>
+    </dialog>
+    <button id="add_book">Add a new book</button>
+    <div id="books">
+    </div>
+</body>
+</html> 
